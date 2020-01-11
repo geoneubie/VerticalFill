@@ -1,0 +1,39 @@
+html, body, .flex_container{
+    height: 100%;
+    margin: 0;
+}
+
+/* This is where the magic happens... :)*/
+.flex_container {
+  display: flex;
+  flex-direction: column;
+	flex-flow: column nowrap;
+}
+
+.flex_fixed {
+	flex:none;
+}
+.flex_expand {
+	flex:auto;
+}
+/* ...and this where the magic ends :( */
+
+/* This is just some interesting formatting on the header, footer, and body */
+.header, .footer {
+  background: steelblue;
+  color: white;
+  padding: 4px 8px;
+}
+
+.header {
+  text-align: center;
+}
+
+.footer {
+  text-align: left;
+}
+
+.content-body {
+  background-color: forestgreen;
+  min-height: 400px;
+}
